@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,5 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Badwords Censorship</title>
   </head>
-  <body></body>
+  <body>
+    <?= $_GET['message'] ?>
+    <p>Il paragrafo è lungo: <?= strlen($_GET['message']) ?> </p>
+  </body>
 </html>

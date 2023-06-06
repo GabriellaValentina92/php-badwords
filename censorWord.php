@@ -1,4 +1,8 @@
-
+<?php
+$words = $_GET['word'];
+$textMessage = $_GET['message'];
+$censorWord = str_replace($words, '***', $textMessage);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +13,9 @@
     <title>Badwords Censorship</title>
   </head>
   <body>
-    <?= $_GET['message'] ?>
-    <p>Il paragrafo è lungo: <?= strlen($_GET['message']) ?> </p>
+    <?= $textMessage; ?>
+    <p>Il paragrafo è lungo: <?= strlen($textMessage); ?> </p>
+    <?= $censorWord; ?>
+    <p>Il paragrafo è lungo: <?= strlen($censorWord); ?> </p>
   </body>
 </html>

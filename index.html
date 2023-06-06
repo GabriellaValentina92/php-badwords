@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badwords Censorship</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        max-width: 900px;
+        margin: 6px auto;
+      }
+
+      h1 {
+        font-size: 1rem;
+      }
+
+      .inserText {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .btn {
+        padding: 0.5rem;
+      }
+    </style>
+    <div class="container">
+      <h1>INSERT THE TEXT AND CHOOSE WHAT WORD YOU WANT TO CENSOR...</h1>
+      <form action="index.php">
+        <input
+          type="text"
+          name="word"
+          placeholder="your censored word"
+          class="inserText"
+        />
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          class="inserText"
+          placeholder="insert your message"
+        ></textarea>
+        <div class="btn">
+          <button type="submit">submit</button>
+          <button type="reset">reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
